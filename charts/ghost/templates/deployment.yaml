@@ -8,6 +8,7 @@ metadata:
     chart: "{{ template "ghost.chart" . }}"
     release: {{ .Release.Name | quote }}
     heritage: {{ .Release.Service | quote }}
+    mvicedo: mola
 spec:
   selector:
     matchLabels:
